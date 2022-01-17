@@ -9,6 +9,8 @@ var doamdien = document.getElementById('doamdien')
 var electron = document.getElementById('electron')
 var oxihoa = document.getElementById('oxihoa')
 
+var ngtoHH = document.getElementsByClassName('ngtoHH')
+
 var data = {
     "al": {
         "ky_hieu": "Al",
@@ -35,6 +37,11 @@ var data = {
         "oxi_hoa": "-1, 1, 3, (4), 5, 7"
     }
 }
+
+// Al
+ngtoHH[0].addEventListener('click', function(){
+    console.log('Đây là nguyên tố Al')
+})
 
 al.addEventListener('click', function(){
     kyhieu.textContent = data.al.ky_hieu
